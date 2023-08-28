@@ -1,0 +1,42 @@
+<h1>Hello everyone!</h1>
+This is my first rails page.....
+<br>
+<h1 style="text-decoration:underline;">Student Form</h1>
+<%= form_with model: @Student do |form| %>
+<div>
+	<%=  form.label :first_name %>
+	<br>
+	<%=form.text_field :first_name %>
+</div>
+<div>
+	<%=  form.label :last_name %>
+	<br>
+	<%=form.text_field :last_name %>
+</div>
+<div>
+	<%=  form.label :email %>
+	<br>
+	<%=form.email_field :email %>
+</div>
+<%= form.submit %>
+<br>
+<table>
+	<h1 style="text-decoration:underline; font-weight: 00;: ">Existing Student</h1>
+	<thead>
+		<!-- <div>
+			
+		</div> -->
+		<tr>
+			<th>Name</th>
+		    <th>Roll no</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Jyoti</td>
+			<td>08</td>
+		</tr>
+	</tbody>
+	
+</table>
+<% end %>
